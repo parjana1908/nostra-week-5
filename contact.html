@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/13301/13301776.png" type="image/x-icon">
+    <title>Contact</title>
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- offer -->
+    <div class="offer" id="offer">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first order</p>
+        <i id="offer-close" class="fa-solid fa-xmark"></i>
+    </div>
+
+    <!-- navbar -->
+    <div class="nav" id="nav">
+        <h2>Nostra</h2>
+ <i class="fa-solid fa-bars" id="menu"  style="color: rgb(30, 48, 80);"></i>
+
+        <ul class="nav__list">
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="#arrival">New Arrival</a>
+            </li>
+            <li>
+                <a href="#most">Most Wanted</a>
+            </li>
+            <li>
+                <a href="./collection.html">Collections</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- slide-bar -->
+
+    <div class="side-bar" id="slide-bar">
+        <p style="text-align: right;">
+            <i id="close" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="links">
+
+            <ul class="list__slide">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#arrival">New Arrival</a>
+                </li>
+                <li>
+                    <a href="#most">Most Wanted</a>
+                </li>
+                <li>
+                    <a href="./collection.html">Collections</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- contact -->
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!--news letter -->
+    <div class="news">
+        <h2 style="color: #111827; font-weight: bold; font-size: 3vw;">Join Our NEWS Letter</h2>
+        <p style="font-size: 2vw; margin-bottom: 5px; margin-top: 5px;">Signup for our email newspaper to get exclusive
+            discounts, updates, and more</p>
+        <input type="text" id="text"><br>
+        <button>Subscrible<i class="fa-solid fa-arrow-right-long" style="margin-left: 2px;"></i></button>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <h1 style="margin-bottom: 20px;">Nostra</h1>
+        <p style="margin-bottom: 15px;">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for
+            those interest</p>
+
+        <div class="footer__icon">
+            <i class="fa-brands fa-instagram" style="color: rgb(245, 253, 255);"></i>
+            <i class="fa-brands fa-facebook" style="color: rgb(245, 253, 255);"></i>
+            <i class="fa-brands fa-twitter" style="color: rgb(245, 253, 255);"></i>
+        </div>
+        <p>@ 2026 nostra.com</p>
+
+    </footer>
+
+    <!-- js -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

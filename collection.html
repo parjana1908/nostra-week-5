@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/13301/13301776.png" type="image/x-icon">
+    <title>Collections</title>
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- offer -->
+    <div class="offer" id="offer">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first order</p>
+        <i id="offer-close" class="fa-solid fa-xmark"></i>
+    </div>
+
+    <!-- navbar -->
+    <div class="nav" id="nav">
+        <h2>Nostra</h2>
+ <i class="fa-solid fa-bars" id="menu"  style="color: rgb(30, 48, 80);"></i>
+
+        <ul class="nav__list">
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="#arrival">New Arrival</a>
+            </li>
+            <li>
+                <a href="#most">Most Wanted</a>
+            </li>
+            <li>
+                <a href="./collection.html">Collections</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </div>
+
+     <!-- slide-bar -->
+
+    <div class="side-bar" id="slide-bar">
+        <p style="text-align: right;">
+            <i id="close" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="links">
+
+            <ul class="list__slide">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#arrival">New Arrival</a>
+                </li>
+                <li>
+                    <a href="#most">Most Wanted</a>
+                </li>
+                <li>
+                    <a href="./collection.html">Collections</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- main content -->
+
+    <div class="container">
+        <div class="categories">
+
+            <h3 class="categories-occasion" style=" margin-top: 3vw;margin-bottom: 10px;">Occasion</h3>
+            <div>
+                <input type="checkbox" name="filter" value="summer"> Summer <br>
+                <input type="checkbox" name="filter" value="casual"> Casual <br>
+                <input type="checkbox" name="filter" value="formal"> Formal
+
+            </div>
+
+            <h3 class="categories-colors" style=" margin-top: 3vw;margin-bottom: 10px;">Colors</h3>
+            <div>
+                <input type="checkbox" name="filter" value="black"> Black <br>
+                <input type="checkbox" name="filter" value="blue"> Blue <br>
+                <input type="checkbox" name="filter" value="sandel"> Sandel <br>
+                <input type="checkbox" name="filter" value="green"> Green
+            </div>
+
+            <h3 class="categories-arrivals" style="margin-top: 3vw;margin-bottom: 10px;">Arrivals</h3>
+            <div>
+                <input type="checkbox" name="filter" value="new"> New <br>
+                <input type="checkbox" name="filter" value="old"> Old
+
+            </div>
+
+        </div>
+
+        <!-- product -->
+        <div class="product-section">
+
+            <div class="search" id="search" >
+                <input type="search" id="searchInput" placeholder="search your style">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="product-category">
+
+                <div class="product" data-filter="summer blue new">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS35rG1id4QwCA5b5guV3-D4Ptu9kVkSxqU-eLW0k0DL-ySbfo7aG_XhOYBfdUdoXKTPpy1a5Iz6ItX76fLjWLHrV02fohqyrbwBbP5tdD4YXk_wrsM3Hcixg"
+                        alt="summer shirt">
+                    <h2>Summer Beach Shirt</h2>
+                    <p>&#8377;220</p>
+                </div>
+
+                <div class="product" data-filter=" summer casual green new">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTkO-7BtVhKj9O2rZqGYvr-nyhmJpf699bcSDXm2bfpt73IyGN5LWxD9SauWWUUJxQR3YKPJihCWMUolo6xZTJcVg4cK7hN"
+                        alt="casual shirt">
+                    <h2>Summer Shirt</h2>
+                    <p>&#8377;200</p>
+                </div>
+
+                <div class="product" data-filter=" casual sandel old">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStgqGzJwfDJZkHF8QR4LobDMyEP4Vo3xzgDg&s"
+                        alt="Track Pant">
+                    <h2>Track Pant</h2>
+                    <p>&#8377;700</p>
+                </div>
+
+                <div class="product" data-filter="formal sandel new">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRvMZ6uHjfO63BhwaKgOO7FqXwXzDHBTQWLzl53yd0iBp1zKt058oA0oLqER80V-onjmTkzZ2aI35Lv0G308VnFrDp7jBVhsIAAnwikypYZ8BGMYTMhnNREjMmsv2ePya67HHLs7TeA354&usqp=CAc"
+                        alt="sandel shirt">
+                    <h2>Formal Shirt</h2>
+                    <p>&#8377;900</p>
+                </div>
+
+                <div class="product" data-filter="formal sandel new">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LsbTtJyySHC7F0Ql525xOhQZYcs-nl-wzg&s"
+                        alt="formal pant">
+
+                    <h2>Formal Pant</h2>
+                    <p>&#8377;799</p>
+                </div>
+
+                <div class="product" data-filter="casual blue old">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="t-shirt">
+                    <h2>T-Shirt</h2>
+                    <p>&#8377;300</p>
+                </div>
+
+                <div class="product" data-filter="casual blue new">
+                    <img src="https://images.unsplash.com/photo-1740711152088-88a009e877bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hpcnR8ZW58MHx8MHx8fDA%3D"
+                        alt="casual shirt">
+                    <h2>Casual-Shirt</h2>
+                    <p>&#8377;500</p>
+                </div>
+
+                <div class="product" data-filter="casual black old">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYLOikNeZpHUyqnUy446KqQqHaZgR76_Quw&s"
+                alt="black pant">
+                    <h2>Balck Pant</h2>
+                    <p>&#8377;699</p>
+                </div>
+
+                <div class="product" data-filter="summer casual sandel black new">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQu8bH2dZkNwoYUsEr3CNgFe8eQachtvZg4_rjguUCygxG_WLkng4H2dxCPLl8-t-t3CuIDts00VDLkPRQi0-1QEElI4uDSAzDuEnD36NGZjbS6CWxinZQQtA"
+                alt="Casual wear">
+                    <h2>Casual Wear</h2>
+                    <p>&#8377;899</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--news letter -->
+    <div class="news">
+        <h2 style="color: #111827; font-weight: bold; font-size: 3vw;">Join Our NEWS Letter</h2>
+        <p style="font-size: 2vw; margin-bottom: 5px; margin-top: 5px;">Signup for our email newspaper to get exclusive
+            discounts, updates, and more</p>
+        <input type="text" id="text"><br>
+        <button>Subscrible<i class="fa-solid fa-arrow-right-long" style="margin-left: 2px;"></i></button>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <h1 style="margin-bottom: 20px;">Nostra</h1>
+        <p style="margin-bottom: 15px;">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for
+            those interest</p>
+
+        <div class="footer__icon">
+            <i class="fa-brands fa-instagram" style="color: rgb(245, 253, 255);"></i>
+            <i class="fa-brands fa-facebook" style="color: rgb(245, 253, 255);"></i>
+            <i class="fa-brands fa-twitter" style="color: rgb(245, 253, 255);"></i>
+        </div>
+        <p>@ 2026 nostra.com</p>
+
+    </footer>
+
+    <!-- js -->
+     <script src="./collection.js"></script>
+
+</body>
+
+</html>
